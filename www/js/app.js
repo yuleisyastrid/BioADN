@@ -97,7 +97,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/subCategoria',
     templateUrl: 'templates/subCategoria.html',
     controller: "subCategoriaCtrl"
-  });
+  })
+   .state('tab.adn', {
+    url: '/adn',
+    views: {
+      'tab-adn': {
+        templateUrl: 'templates/ADN.html',
+        controller: 'adnCtrl'
+      }
+    }
+  })   
+   ;
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
