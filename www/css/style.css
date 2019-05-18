@@ -145,3 +145,8 @@ height: 175
   size:50;
   font-size:150%;
   }
+.row {
+  background: url('../img/010.jpg')no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
